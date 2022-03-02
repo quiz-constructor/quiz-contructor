@@ -1,13 +1,19 @@
 import { FC } from 'react';
 
 export type QuizImageProps = {
-    src: string;
+    name: string;
+    url: string;
 };
 
-const QuizImage: FC<QuizImageProps> = ({ src }) => {
+const QuizImage: FC<QuizImageProps> = ({ name, url }) => {
     return (
-        <div className='quiz-image flex flex-wrap h-screen justify-center content-center'>
-            <img className='max-w-lg h-auto shadow-lg' src={src} alt='quiz' />
+        <div
+            className='quiz-image relative h-50vh w-96 max-w-xl bg-center rounded-tinderCard bg-cover drop-shadow-2xl'
+            style={{
+                backgroundImage: `url(${url})`,
+            }}
+        >
+            <p className='absolute text-white bottom-5 left-5'>{name}</p>
         </div>
     );
 };
