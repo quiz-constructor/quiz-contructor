@@ -10,7 +10,7 @@ type quizCharacter = {
 };
 
 const QuizPage: FC<QuizPageProps> = () => {
-    const [quizCharacters, setQuizCharacters] = useState<quizCharacter[]>([
+    const [quizCharacters] = useState<quizCharacter[]>([
         {
             name: 'Asuna',
             url: 'https://cdna.artstation.com/p/assets/images/images/026/348/354/large/tyler-dao-asuna-stacia.jpg?1588540397',
