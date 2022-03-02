@@ -30,7 +30,7 @@ const QuizPage: FC<QuizPageProps> = () => {
 
     return (
         <div className='quiz-page'>
-            <div className='flex justify-center mt-25vh'>
+            <div className='flex justify-center mt-15vh lg:mt-25vh'>
                 {quizCharacters.map((character, index) => (
                     <TinderCard
                         className='absolute'
