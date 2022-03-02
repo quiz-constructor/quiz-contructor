@@ -9,7 +9,7 @@ module.exports = {
                 '50vh': '50vh',
             },
             margin: {
-                '5vh': '5vh',
+                '25vh': '25vh',
             },
         },
     },

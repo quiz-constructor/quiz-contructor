@@ -29,15 +29,15 @@ const QuizPage: FC<QuizPageProps> = () => {
     };
 
     return (
-        <div className='quiz-page h-screen'>
-            <div className='flex justify-center mt-5vh'>
+        <div className='quiz-page'>
+            <div className='flex justify-center mt-25vh'>
                 {quizCharacters.map((character, index) => (
                     <TinderCard
                         className='absolute'
                         key={index}
                         onSwipe={handleSwipe}
                         onCardLeftScreen={() => console.log('card left screen')}
-                        preventSwipe={['up', 'down']}
+                        preventSwipe={['left', 'right']}
                     >
                         <QuizImage name={character.name} url={character.url} />
                     </TinderCard>
